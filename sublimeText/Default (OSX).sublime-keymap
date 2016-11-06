@@ -1,0 +1,9 @@
+[
+    { "keys": ["super+shift+v"], "command": "paste" },
+    { "keys": ["super+v"], "command": "paste_and_indent" },
+
+    { "keys": ["ctrl+shift+d"], "command": "dev_docs_search_selection" },
+    { "keys": ["ctrl+alt+d"], "command": "dev_docs_search_from_input" },
+
+    { "keys": ["super+alt+shift+down"], "command": "goto_definition" }
+]

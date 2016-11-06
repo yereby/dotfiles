@@ -1,0 +1,66 @@
+{
+    "auto_complete_delay": 500,
+    "bold_folder_labels": true,
+    "detect_indentation": false,
+    "detect_slow_plugins": false,
+    "draw_white_space": "all",
+    "ensure_newline_at_eof_on_save": true,
+    "file_exclude_patterns":
+    [
+        "*.sublime-project",
+        "*.sublime-workspace",
+        "*.pyc",
+        "*.pyo",
+        "*.exe",
+        "*.dll",
+        "*.obj",
+        "*.o",
+        "*.a",
+        "*.lib",
+        "*.so",
+        "*.dylib",
+        "*.ncb",
+        "*.sdf",
+        "*.suo",
+        "*.pdb",
+        "*.idb",
+        ".DS_Store",
+        "*.class",
+        "*.psd",
+        "*.db",
+        "*.log"
+    ],
+    "fold_buttons": false,
+    "folder_exclude_patterns":
+    [
+        "env",
+        ".svn",
+        ".git",
+        ".hg",
+        "node_modules",
+        "CVS"
+    ],
+    "font_size": 13.0,
+    "highlight_line": true,
+    "ignored_packages":
+    [
+        "Devastate",
+        "Vintage"
+    ],
+    "indent_to_bracket": true,
+    "rulers":
+    [
+        80,
+        120
+    ],
+    "show_encoding": true,
+    "show_line_endings": true,
+    "tab_size": 2,
+    "translate_tabs_to_spaces": true,
+    "trim_automatic_white_space": true,
+    "trim_trailing_white_space_on_save": true,
+    "use_simple_full_screen": true,
+    "wide_caret": true,
+    "word_wrap": false,
+    "wrap_width": 80
+}
