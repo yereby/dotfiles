@@ -24,6 +24,11 @@ inoremap <Right> <nop>
 inoremap <Up> <nop>
 inoremap <Down> <nop>
 
+" Numbers
+set number " Display current number line
+set relativenumber " Active relative numbers
+set numberwidth=5 " Set number width
+
 
 " récupéré du vimrc
 
@@ -67,12 +72,7 @@ inoremap <Down> <nop>
 " set ignorecase " Ignore case in patterns
 " set lazyredraw " Does not redraw sreen. To for use ':redraw'
 " set showcmd " display incomplete commands
-" 
-" " Numbers
-" set number " Display current number line
-" set relativenumber " Active relative numbers
-" set numberwidth=5 " Set number width
-" 
+
 " " Layout
 " set nowrap " Disable wrapping
 " set ruler " Show the line and column number of the cursor position
