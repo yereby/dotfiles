@@ -6,6 +6,25 @@
 let mapleader = ','
 let maplocalleader = '\\'
 
+" #########
+" Movements
+" #########
+
+" Disable esc key and map 'jk' instead
+inoremap <esc> <nop>
+inoremap jk <esc>
+
+" Remap arrow keys
+nnoremap <Left> :echoe 'Use h'<CR>
+nnoremap <Right> :echoe 'Use l'<CR>
+nnoremap <Up> :echoe 'Use k'<CR>
+nnoremap <Down> :echoe 'Use j'<CR>
+inoremap <Left> <nop>
+inoremap <Right> <nop>
+inoremap <Up> <nop>
+inoremap <Down> <nop>
+
+
 " récupéré du vimrc
 
 
@@ -139,21 +158,6 @@ let maplocalleader = '\\'
 " nnoremap H ^
 " " Go to the end of the line
 " nnoremap L $
-" 
-" " Disable esc key
-" " and map 'jk' instead
-" inoremap <esc> <nop>
-" inoremap jk <esc>
-" 
-" " Remap arrow keys
-" nnoremap <Left> :echoe 'Use h'<CR>
-" nnoremap <Right> :echoe 'Use l'<CR>
-" nnoremap <Up> :echoe 'Use k'<CR>
-" nnoremap <Down> :echoe 'Use j'<CR>
-" inoremap <Left> <nop>
-" inoremap <Right> <nop>
-" inoremap <Up> <nop>
-" inoremap <Down> <nop>
 " 
 " " Quicker buffer movement
 " nnoremap <C-j> <C-w>j
