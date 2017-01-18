@@ -6,6 +6,16 @@
 let mapleader = ','
 let maplocalleader = '\\'
 
+" Numbers
+set number " Display current number line
+set relativenumber " Active relative numbers
+set numberwidth=5 " Set number width
+
+" Layout
+set ruler " Show the line and column number of the cursor position
+set textwidth=80 " Display a line at 80 characters
+set colorcolumn=+1 "Width of the line
+
 " #########
 " Movements
 " #########
@@ -24,14 +34,49 @@ inoremap <Right> <nop>
 inoremap <Up> <nop>
 inoremap <Down> <nop>
 
-" Numbers
-set number " Display current number line
-set relativenumber " Active relative numbers
-set numberwidth=5 " Set number width
+" Go to the begining of the line (non blank character)
+nnoremap H ^
+" Go to the end of the line
+nnoremap L $
 
+" Quicker buffer movement
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-h> <C-w>h
+nnoremap <C-l> <C-w>l
+
+" Go to the next tab
+nnoremap <leader>t :tabnext<cr>
+" Switch between the last two files
+nnoremap <leader><leader> <c-^>
+
+" ####################
+" Text transformations
+" ####################
+
+" Convert current word in uppercase in insert mode
+inoremap <leader>u <esc>viw U ea
+" Convert current word in uppercase in normal mode
+nnoremap <leader>u viw U e
+" Convert current word in lowercase in insert mode
+inoremap <leader>l <esc>viw u ea
+" Convert current word in lowercase in normal mode
+nnoremap <leader>l viw u e
+
+" Surround word with double quotes in normal mode
+nnoremap <leader>" viw<esc>a"<esc>hbi"<esc>lel
+" Surround word with single quotes in normal mode
+nnoremap <leader>' viw<esc>a'<esc>hbi'<esc>lel
+" Surround word with double quotes in visual mode
+vnoremap <leader>" <esc>`<i"<esc> `>la"<esc>
+" Surround word with single quotes in visual mode
+vnoremap <leader>' <esc>`<i'<esc> `>la'<esc>
+
+" Abbreviations in insert mode
+iabbrev info console.info(
+iabbrev debug console.debug(
 
 " récupéré du vimrc
-
 
 " " #######
 " " Plugins
@@ -75,9 +120,6 @@ set numberwidth=5 " Set number width
 
 " " Layout
 " set nowrap " Disable wrapping
-" set ruler " Show the line and column number of the cursor position
-" set textwidth=80 " Display a line at 80 characters
-" set colorcolumn=+1 "Width of the line
 " set splitbelow " Open split to bottom
 " set splitright " Open split to right
 " set diffopt+=vertical " Always use vertical diffs
@@ -98,7 +140,6 @@ set numberwidth=5 " Set number width
 " set nobackup " Do not make a backup file before overwriting file and doesn't not leave it after
 " set nowritebackup " Do not make a backup file before overwriting file
 " set noswapfile " Do not use swapfile for the buffer
-" 
 " 
 " " Undoing
 " set undofile
@@ -123,52 +164,12 @@ set numberwidth=5 " Set number width
 " 
 " " Airline Theme
 " let g:airline_theme='tomorrow'
-" 
-" " ####################
-" " Text transformations
-" " ####################
-" 
-" " Convert current word in uppercase in insert mode
-" inoremap <leader>u <esc>viw U ea
-" " Convert current word in uppercase in normal mode
-" nnoremap <leader>u viw U e
-" " Convert current word in lowercase in insert mode
-" inoremap <leader>l <esc>viw u ea
-" " Convert current word in lowercase in normal mode
-" nnoremap <leader>l viw u e
-" 
-" " Surround word with double quotes in normal mode
-" nnoremap <leader>" viw<esc>a"<esc>hbi"<esc>lel
-" " Surround word with single quotes in normal mode
-" nnoremap <leader>' viw<esc>a'<esc>hbi'<esc>lel
-" " Surround word with double quotes in visual mode
-" vnoremap <leader>" <esc>`<i"<esc> `>la"<esc>
-" " Surround word with single quotes in visual mode
-" vnoremap <leader>' <esc>`<i'<esc> `>la'<esc>
-" 
-" " Abbreviations in insert mode
-" iabbrev info console.info(
-" iabbrev debug console.debug(
+
 " 
 " " #########
 " " Movements
 " " #########
 " 
-" " Go to the begining of the line (non blank character)
-" nnoremap H ^
-" " Go to the end of the line
-" nnoremap L $
-" 
-" " Quicker buffer movement
-" nnoremap <C-j> <C-w>j
-" nnoremap <C-k> <C-w>k
-" nnoremap <C-h> <C-w>h
-" nnoremap <C-l> <C-w>l
-" 
-" " Go to the next tab
-" nnoremap <leader>t :tabnext<cr>
-" " Switch between the last two files
-" nnoremap <leader><leader> <c-^>
 " 
 " " #################
 " " General remapping
