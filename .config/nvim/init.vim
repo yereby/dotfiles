@@ -16,6 +16,14 @@ set ruler " Show the line and column number of the cursor position
 set textwidth=80 " Display a line at 80 characters
 set colorcolumn=+1 "Width of the line
 
+" Indentation
+set shiftround " Active shift rounding for indentation
+set tabstop=2 " Number of space characters for a tabulation
+set shiftwidth=2 " Number of space characters inserted for indentation
+set softtabstop=2 " Makes the indentation spaces feel like real tabs
+" set expandtab " Tabs as spaces
+set noexpandtab " Tabs as tabs
+
 " #########
 " Movements
 " #########
@@ -128,13 +136,6 @@ iabbrev debug console.debug(
 " set showmatch " Show the matching bracket at insert
 " set matchtime=3 " Tenths of a second to show the matching paren
 " 
-" " Indentation
-" set shiftround " Active shift rounding for indentation
-" set tabstop=2 " Number of space characters for a tabulation
-" set shiftwidth=2 " Number of space characters inserted for indentation
-" set softtabstop=2 " Makes the indentation spaces feel like real tabs
-" " set expandtab " Tabs as spaces
-" set noexpandtab " Tabs as tabs
 " 
 " " Temporary files
 " set nobackup " Do not make a backup file before overwriting file and doesn't not leave it after
