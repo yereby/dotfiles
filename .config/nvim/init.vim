@@ -6,6 +6,13 @@
 let mapleader = ','
 let maplocalleader = '\\'
 
+" General
+set ignorecase " Ignore case in patterns
+set showcmd " display partial commands
+" set autowrite " Automatically :write before running commands
+" set autochdir " Change to the current working directory to the file which was opened or selected
+" set lazyredraw " Does not redraw sreen while executing macros. To for use ':redraw'
+
 " Numbers
 set number " Display current number line
 set relativenumber " Active relative numbers
@@ -15,6 +22,10 @@ set numberwidth=5 " Set number width
 set ruler " Show the line and column number of the cursor position
 set textwidth=80 " Display a line at 80 characters
 set colorcolumn=+1 "Width of the line
+set splitbelow " Open split to bottom
+set splitright " Open split to right
+" set diffopt+=vertical " Always use vertical diffs
+" set nowrap " Disable wrapping
 
 " Indentation
 set shiftround " Active shift rounding for indentation
@@ -84,8 +95,6 @@ vnoremap <leader>' <esc>`<i'<esc> `>la'<esc>
 iabbrev info console.info(
 iabbrev debug console.debug(
 
-" récupéré du vimrc
-
 " " #######
 " " Plugins
 " " #######
@@ -119,18 +128,6 @@ iabbrev debug console.debug(
 " " #############
 " 
 " 
-" " General
-" set autowrite " Automatically :write before running commands
-" set autochdir " Change to the current working directory to the file which was opened or selected
-" set ignorecase " Ignore case in patterns
-" set lazyredraw " Does not redraw sreen. To for use ':redraw'
-" set showcmd " display incomplete commands
-
-" " Layout
-" set nowrap " Disable wrapping
-" set splitbelow " Open split to bottom
-" set splitright " Open split to right
-" set diffopt+=vertical " Always use vertical diffs
 " 
 " " Matching parenthesis
 " set showmatch " Show the matching bracket at insert
