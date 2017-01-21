@@ -72,6 +72,25 @@ nnoremap <leader>t :tabnext<cr>
 " Switch between the last two files
 nnoremap <leader><leader> <c-^>
 
+" #################
+" General remapping
+" #################
+
+" Editing vimrc file
+nnoremap <leader>ev :split $MYVIMRC<cr>
+" Sourcing vimrc file
+nnoremap <leader>sv :source $MYVIMRC<cr>
+
+" turn off search highlight
+nnoremap <leader>h :nohlsearch<CR>
+" Open NERDTree
+nnoremap <leader>n :NERDTree<CR>
+
+" Maximise split (expand)
+nnoremap <leader>z <C-w>_<CR><C-w><Bar>
+" Minimize split (reduce)
+nnoremap <leader>r <C-w>=
+
 " ####################
 " Text transformations
 " ####################
@@ -172,24 +191,6 @@ iabbrev debug console.debug(
 " " #########
 " 
 " 
-" " #################
-" " General remapping
-" " #################
-" 
-" " Editing vimrc file
-" nnoremap <leader>ev :split $MYVIMRC<cr>
-" " Sourcing vimrc file
-" nnoremap <leader>sv :source $MYVIMRC<cr>
-" 
-" " turn off search highlight
-" nnoremap <leader>h :nohlsearch<CR>
-" " Open NERDTree
-" nnoremap <leader>n :NERDTree<CR>
-" 
-" " Maximise split (expand)
-" nnoremap <leader>z <C-w>_<CR><C-w><Bar>
-" " Minimize split (reduce)
-" nnoremap <leader>r <C-w>=
 " 
 " " #####################################
 " " Sessions recording plugin vim-session
