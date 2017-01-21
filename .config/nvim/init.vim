@@ -149,8 +149,6 @@ iabbrev debug console.debug(
 " " Configuration
 " " #############
 " 
-" 
-" 
 " " Matching parenthesis
 " set showmatch " Show the matching bracket at insert
 " set matchtime=3 " Tenths of a second to show the matching paren
@@ -184,13 +182,6 @@ iabbrev debug console.debug(
 " 
 " " Airline Theme
 " let g:airline_theme='tomorrow'
-
-" 
-" " #########
-" " Movements
-" " #########
-" 
-" 
 " 
 " " #####################################
 " " Sessions recording plugin vim-session
@@ -316,12 +307,4 @@ iabbrev debug console.debug(
 "   setglobal fileencoding=utf-8
 "   "setglobal bomb
 "   set fileencodings=ucs-bom,utf-8,latin1
-" endif
-" 
-" " ############
-" " Local config
-" " ############
-" 
-" if filereadable($HOME . '/.vimrc.local')
-"   source ~/.vimrc.local
 " endif
