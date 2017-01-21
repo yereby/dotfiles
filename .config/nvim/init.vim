@@ -8,18 +8,20 @@ let maplocalleader = '\\'
 
 " General
 set ignorecase " Ignore case in patterns
+set smartCase " Ignore case unless Upper in search
 set showcmd " display partial commands
+set clipboard=unnamedplus " Use default system clipboard
 " set autowrite " Automatically :write before running commands
 " set autochdir " Change to the current working directory to the file which was opened or selected
 " set lazyredraw " Does not redraw sreen while executing macros. To for use ':redraw'
 
 " Numbers
 set number " Display current number line
+set ruler " Show the line and column number of the cursor position
 set relativenumber " Active relative numbers
 set numberwidth=5 " Set number width
 
 " Layout
-set ruler " Show the line and column number of the cursor position
 set textwidth=80 " Display a line at 80 characters
 set colorcolumn=+1 "Width of the line
 set splitbelow " Open split to bottom
@@ -32,8 +34,9 @@ set shiftround " Active shift rounding for indentation
 set tabstop=2 " Number of space characters for a tabulation
 set shiftwidth=2 " Number of space characters inserted for indentation
 set softtabstop=2 " Makes the indentation spaces feel like real tabs
-" set expandtab " Tabs as spaces
-set noexpandtab " Tabs as tabs
+set expandtab " Tabs as spaces
+" set noexpandtab " Tabs as tabs
+set wildmode=longest,ful
 
 " #########
 " Movements
