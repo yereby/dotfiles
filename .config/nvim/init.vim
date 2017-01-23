@@ -39,7 +39,7 @@ set shiftwidth=2 " Number of space characters inserted for indentation
 set softtabstop=2 " Makes the indentation spaces feel like real tabs
 set expandtab " Tabs as spaces
 " set noexpandtab " Tabs as tabs
-set wildmode=longest,ful
+set wildmode=longest,full
 
 " #########
 " Movements
