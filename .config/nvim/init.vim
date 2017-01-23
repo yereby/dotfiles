@@ -11,7 +11,7 @@ let maplocalleader = '\\'
 
 " General
 set ignorecase " Ignore case in patterns
-set smartCase " Ignore case unless Upper in search
+set smartcase " Ignore case unless Upper in search
 set showcmd " display partial commands
 set clipboard=unnamedplus " Use default system clipboard
 " set autowrite " Automatically :write before running commands
@@ -120,34 +120,30 @@ vnoremap <leader>' <esc>`<i'<esc> `>la'<esc>
 iabbrev info console.info(
 iabbrev debug console.debug(
 
-" " #######
-" " Plugins
-" " #######
-" 
-" " set the runtime path to include Vundle and initialize
-" set rtp+=~/.vim/bundle/Vundle.vim
-" call vundle#begin()
-" 
-" Plugin 'VundleVim/Vundle.vim'
-" 
-" Plugin 'scrooloose/nerdtree' " NERDTree
-" Plugin 'scrooloose/syntastic' " Syntax checking
-" Plugin 'kien/ctrlp.vim' " Search file in project
-" Plugin 'bling/vim-airline'
-" Plugin 'vim-airline/vim-airline-themes'
-" Plugin 'tpope/vim-fugitive'
-" Plugin 'airblade/vim-gitgutter'
-" Plugin 'terryma/vim-multiple-cursors'
-" Plugin 'morhetz/gruvbox' " Theme Gruvbox
-" Plugin 'groenewege/vim-less' " Coloration for less files
-" Plugin 'digitaltoad/vim-jade' " Coloration for jade/pug templates
-" Plugin 'kchmck/vim-coffee-script' " Coloration for coffee script
-" Plugin 'wavded/vim-stylus' " Coloration for stylus
-" Plugin 'xolox/vim-misc' " Extended library needed by plugins like vim-session
-" Plugin 'xolox/vim-session' " Record layout sessions
-" 
-" call vundle#end()
-" 
+" #######
+" Plugins
+" #######
+
+call plug#begin('~/.local/share/nvim/plugged')
+
+Plugin 'scrooloose/nerdtree' " NERDTree
+Plugin 'scrooloose/syntastic' " Syntax checking
+Plugin 'kien/ctrlp.vim' " Search file in project
+Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'tpope/vim-fugitive'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'terryma/vim-multiple-cursors'
+Plugin 'morhetz/gruvbox' " Theme Gruvbox
+Plugin 'groenewege/vim-less' " Coloration for less files
+Plugin 'digitaltoad/vim-jade' " Coloration for jade/pug templates
+Plugin 'kchmck/vim-coffee-script' " Coloration for coffee script
+Plugin 'wavded/vim-stylus' " Coloration for stylus
+Plugin 'xolox/vim-misc' " Extended library needed by plugins like vim-session
+Plugin 'xolox/vim-session' " Record layout sessions
+
+call plug#end()
+
 " " #############
 " " Configuration
 " " #############
