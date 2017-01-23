@@ -126,21 +126,21 @@ iabbrev debug console.debug(
 
 call plug#begin('~/.local/share/nvim/plugged')
 
-Plugin 'scrooloose/nerdtree' " NERDTree
-Plugin 'scrooloose/syntastic' " Syntax checking
-Plugin 'kien/ctrlp.vim' " Search file in project
-Plugin 'bling/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'tpope/vim-fugitive'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'terryma/vim-multiple-cursors'
-Plugin 'morhetz/gruvbox' " Theme Gruvbox
-Plugin 'groenewege/vim-less' " Coloration for less files
-Plugin 'digitaltoad/vim-jade' " Coloration for jade/pug templates
-Plugin 'kchmck/vim-coffee-script' " Coloration for coffee script
-Plugin 'wavded/vim-stylus' " Coloration for stylus
-Plugin 'xolox/vim-misc' " Extended library needed by plugins like vim-session
-Plugin 'xolox/vim-session' " Record layout sessions
+Plug 'scrooloose/nerdtree' " NERDTree
+Plug 'scrooloose/syntastic' " Syntax checking
+Plug 'kien/ctrlp.vim' " Search file in project
+Plug 'bling/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'morhetz/gruvbox' " Theme Gruvbox
+Plug 'groenewege/vim-less' " Coloration for less files
+Plug 'digitaltoad/vim-jade' " Coloration for jade/pug templates
+Plug 'kchmck/vim-coffee-script' " Coloration for coffee script
+Plug 'wavded/vim-stylus' " Coloration for stylus
+Plug 'xolox/vim-misc' " Extended library needed by plugins like vim-session
+Plug 'xolox/vim-session' " Record layout sessions
 
 call plug#end()
 
