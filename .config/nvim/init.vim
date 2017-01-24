@@ -29,8 +29,8 @@ set textwidth=80 " Display a line at 80 characters
 set colorcolumn=+1 "Width of the line
 set splitbelow " Open split to bottom
 set splitright " Open split to right
+set nowrap " Disable wrapping
 " set diffopt+=vertical " Always use vertical diffs
-" set nowrap " Disable wrapping
 
 " Indentation
 set shiftround " Active shift rounding for indentation
