@@ -188,6 +188,11 @@ nnoremap <leader>h :nohlsearch<CR>
 " Open NERDTree
 nnoremap <leader>n :NERDTree<CR>
 
+" Maximise split (expand)
+nnoremap <leader>z <C-w>_<CR><C-w><Bar>
+" Minimize split (reduce)
+nnoremap <leader>r <C-w>=
+
 " #####################################
 " Sessions recording plugin vim-session
 " #####################################
