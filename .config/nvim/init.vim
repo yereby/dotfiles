@@ -39,7 +39,13 @@ set shiftwidth=2 " Number of space characters inserted for indentation
 set softtabstop=2 " Makes the indentation spaces feel like real tabs
 set expandtab " Tabs as spaces
 " set noexpandtab " Tabs as tabs
+
+" Completion
 set wildmode=longest,full
+" Don't offer to open certain files/directories
+set wildignore+=*.bmp,*.gif,*.ico,*.jpg,*.png,*.ico
+set wildignore+=*.pdf,*.psd
+set wildignore+=node_modules/*,bower_components/*
 
 " #########
 " Movements
