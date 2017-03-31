@@ -270,14 +270,14 @@ endif
 set wildmode=list:longest,list:full
 
 function! InsertTabWrapper(direction)
-	let char_before = col('.') - 1
-	if !char_before || getline('.')[char_before - 1] !~ '\k'
-		return "\<tab>"
-	elseif "backward" == a:direction
-		return "\<c-p>"
-	else
-		return "\<c-n>"
-	endif
+  let char_before = col('.') - 1
+  if !char_before || getline('.')[char_before - 1] !~ '\k'
+    return "\<tab>"
+  elseif "backward" == a:direction
+    return "\<c-p>"
+  else
+    return "\<c-n>"
+  endif
 endfunction
 inoremap <tab> <c-r>=InsertTabWrapper("forward")<cr>
 inoremap <s-tab> <c-r>=InsertTabWrapper("backward")<cr>
