@@ -268,16 +268,19 @@ endif
 " will insert tab at beginning of line,
 " will use completion if not at beginning
 set wildmode=list:longest,list:full
-function! InsertTabWrapper()
-    let col = col('.') - 1
-    if !col || getline('.')[col - 1] !~ "\k"
-        return "\<tab>"
-    else
-        return "\<c-p>"
-    endif
+
+function! InsertTabWrapper(direction)
+	let char_before = col('.') - 1
+	if !char_before || getline('.')[char_before - 1] !~ '\k'
+		return "\<tab>"
+	elseif "backward" == a:direction
+		return "\<c-p>"
+	else
+		return "\<c-n>"
+	endif
 endfunction
-inoremap <Tab> <c-r>=InsertTabWrapper()<cr>
-inoremap <S-Tab> <c-n>
+inoremap <tab> <c-r>=InsertTabWrapper("forward")<cr>
+inoremap <s-tab> <c-r>=InsertTabWrapper("backward")<cr>
 
 " Indentation
 " Treat those tags like the block tags they are
