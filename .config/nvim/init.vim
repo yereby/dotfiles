@@ -13,7 +13,6 @@ let maplocalleader = '\\'
 " General
 set ignorecase " Ignore case in patterns
 set smartcase " Ignore case unless Upper in search
-set showcmd " display partial commands
 set clipboard=unnamedplus " Use default system clipboard
 " set autowrite " Automatically :write before running commands
 " set autochdir " Change to the current working directory to the file which was opened or selected
