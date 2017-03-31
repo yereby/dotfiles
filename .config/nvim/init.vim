@@ -21,7 +21,6 @@ set clipboard=unnamedplus " Use default system clipboard
 
 " Numbers
 set number " Display current number line
-set ruler " Show the line and column number of the cursor position
 set relativenumber " Active relative numbers
 set numberwidth=5 " Set number width
 
