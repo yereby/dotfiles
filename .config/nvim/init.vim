@@ -44,6 +44,11 @@ set undofile
 set undolevels=1000 " maximum number of changes that can be undone
 set undoreload=10000 " maximum number lines to save for undo on a buffer reload
 
+" Temporary files
+set nobackup " Do not make a backup file before overwriting file and doesn't not leave it after
+set nowritebackup " Do not make a backup file before overwriting file
+set noswapfile " Do not use swapfile for the buffer
+
 " Display extra whitespace
 set list listchars=tab:\-\ ,trail:·
 
@@ -265,10 +270,6 @@ endif
 " set matchtime=3 " Tenths of a second to show the matching paren
 "
 "
-" " Temporary files
-" set nobackup " Do not make a backup file before overwriting file and doesn't not leave it after
-" set nowritebackup " Do not make a backup file before overwriting file
-" set noswapfile " Do not use swapfile for the buffer
 "
 "
 " " Airline Theme
