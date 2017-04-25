@@ -288,18 +288,20 @@ endif
 " " Treat those tags like the block tags they are
 " let g:html_indent_tags = '\|li\|p\|article\|aside\|audio\|bdi\|canvas\|command\|datalist\|details\|figcaption\|figure\|footer\|header\|hgroup\|mark\|meter\|nav\|output\|progress\|rp\|rt\|ruby\|section\|summary\|time\|video'
 "
-" " ################
-" " Plugin syntastic
-" " ################
-"
-" " let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-"]
-" let g:syntastic_javascript_checkers = ['eslint'] " Linter used
-" " set statusline+=%#warningmsg#
-" " set statusline+=%{SyntasticStatuslineFlag()}
-" " set statusline+=%*
-"
-" let g:syntastic_always_populate_loc_list = 1
-" let g:syntastic_auto_loc_list = 0
-" let g:syntastic_check_on_open = 1 " Check on open and on save
-" let g:syntastic_check_on_wq = 0 " Doesnt check on write and quit
-" let g:syntastic_enable_signs=0
+
+" ################
+" Plugin syntastic
+" ################
+
+" let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-"]
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 0 " Does not update list buffer
+let g:syntastic_check_on_open = 0 " Does not check on open and on save
+let g:syntastic_check_on_wq = 1 " Check on write and quit
+let g:syntastic_enable_signs = 0
+
+let g:syntastic_javascript_checkers = ['eslint'] " Linter used
