@@ -51,6 +51,7 @@ set ignorecase " Ignore case in patterns
 set lazyredraw " Does not redraw sreen. To for use ':redraw'
 set showcmd " display incomplete commands
 set wildmenu " Enhance file opening completion
+set mouse=a " Enable mouse support
 
 " Numbers
 set number " Display current number line
