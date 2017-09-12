@@ -14,6 +14,7 @@ let maplocalleader = '\\'
 set ignorecase " Ignore case in patterns
 set smartcase " Ignore case unless Upper in search
 set clipboard=unnamedplus " Use default system clipboard
+set mouse=a
 " set autowrite " Automatically :write before running commands
 " set autochdir " Change to the current working directory to the file which was opened or selected
 " set lazyredraw " Does not redraw sreen while executing macros. To for use ':redraw'
