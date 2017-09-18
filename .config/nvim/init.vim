@@ -19,6 +19,10 @@ set mouse=a
 " set autochdir " Change to the current working directory to the file which was opened or selected
 " set lazyredraw " Does not redraw sreen while executing macros. To for use ':redraw'
 
+" Changes
+set autoread " Detect file changes elsewhere
+au FocusGained,BufEnter * :checktime " When to detect changes
+
 " Numbers
 set number " Display current number line
 set relativenumber " Active relative numbers
