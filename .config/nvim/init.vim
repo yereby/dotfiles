@@ -98,6 +98,15 @@ nnoremap <leader>t :tabnext<cr>
 " Switch between the last two files
 nnoremap <leader><leader> <c-^>
 
+" terminal
+tnoremap <ESC> <C-\><C-n><C-w><C-p>
+autocmd BufWinEnter,WinEnter term://* startinsert
+autocmd BufLeave term://* stopinsert
+tnoremap <C-h> <C-\><C-n><C-w>h
+tnoremap <C-j> <C-\><C-n><C-w>j
+tnoremap <C-k> <C-\><C-n><C-w>k
+tnoremap <C-l> <C-\><C-n><C-w>l
+
 " #################
 " General remapping
 " #################
