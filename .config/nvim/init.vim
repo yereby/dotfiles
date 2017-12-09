@@ -116,6 +116,9 @@ nnoremap <leader>ev :split $MYVIMRC<cr>
 " Sourcing vimrc file
 nnoremap <leader>sv :source $MYVIMRC<cr>
 
+" show next matched string in the center of screen
+nnoremap n nzz
+nnoremap N Nzz
 " turn off search highlight
 nnoremap <leader>h :nohlsearch<CR>
 " Open NERDTree
