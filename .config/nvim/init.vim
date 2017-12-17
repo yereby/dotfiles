@@ -151,9 +151,6 @@ vnoremap <leader>" <esc>`<i"<esc> `>la"<esc>
 " Surround word with single quotes in visual mode
 vnoremap <leader>' <esc>`<i'<esc> `>la'<esc>
 
-" Abbreviations in insert mode
-iabbrev debug console.debug(
-
 " #######
 " Plugins
 " #######
