@@ -172,6 +172,7 @@ Plug 'kchmck/vim-coffee-script' " Coloration for coffee script
 Plug 'wavded/vim-stylus' " Coloration for stylus
 Plug 'xolox/vim-misc' " Extended library needed by plugins like vim-session
 Plug 'xolox/vim-session' " Record layout sessions
+Plug 'editorconfig/editorconfig-vim' " Editor config
 
 call plug#end()
 
