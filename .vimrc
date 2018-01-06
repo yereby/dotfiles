@@ -91,6 +91,9 @@ set noswapfile " Do not use swapfile for the buffer
 set hlsearch " Highlight search
 set incsearch " Highlight search while typing
 
+" Open a splitted vim grep
+map <F4> <ESC>:vs<CR><ESC> :execute "lvimgrep /" . expand("<cword>") . "./**"<CR><ESC>:lw<CR>
+
 " Display extra whitespace
 set list listchars=tab:\-\ ,trail:·
 

@@ -123,6 +123,8 @@ nnoremap N Nzz
 nnoremap <leader>h :nohlsearch<CR>
 " Open NERDTree
 nnoremap <leader>n :NERDTree<CR>
+" Open a splitted vim grep
+map <F4> <ESC>:vs<CR><ESC> :execute "lvimgrep /" . expand("<cword>") . "./**"<CR><ESC>:lw<CR>
 
 " Maximise split (expand)
 nnoremap <leader>z <C-w>_<CR><C-w><Bar>
