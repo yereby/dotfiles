@@ -161,7 +161,8 @@ call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'scrooloose/nerdtree' " NERDTree
 Plug 'scrooloose/syntastic' " Syntax checking
-Plug 'kien/ctrlp.vim' " Search file in project
+" Plug 'kien/ctrlp.vim' " Search file in project
+Plug 'ctrlpvim/ctrlp.vim' " Replace kien plugin
 Plug 'bling/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-fugitive'
