@@ -14,4 +14,6 @@ alias devs="cd ~/Documents/Devs"
 
 alias nls="npm ls --depth=0"
 
-alias grepp="grep -irn --color --exclude-dir node_modules --exclude-dir .git"
+alias grepp="grep -irn --color --exclude-dir node_modules --exclude-dir .git --exclude-dir coverage --exclude-dir .nyc_output"
+
+alias runmongo="mongod --dbpath /data/db --logpath /data/log/db.log --fork"
