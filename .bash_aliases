@@ -13,6 +13,7 @@ alias correcthorse="cd ~/Documents/devs/correcthorse && ./correcthorse fr && cd 
 alias devs="cd ~/Documents/Devs"
 
 alias nls="npm ls --depth=0"
+alias ns="npm start"
 
 alias grepp="grep -irn --color --exclude-dir node_modules --exclude-dir .git --exclude-dir coverage --exclude-dir .nyc_output"
 
