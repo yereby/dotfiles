@@ -149,5 +149,5 @@ export PATH=/home/yereby/.local/bin:$PATH
 
 
 # Load Angular CLI autocompletion.
-source <(ng completion script)
+# source <(ng completion script)
 eval "$(zoxide init zsh)"
